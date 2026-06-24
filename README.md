@@ -237,15 +237,48 @@ Smart-Home-Assistant-AI
 
 ---
 
-## 🎯 Future Enhancements
+## Future Enhancements
 
 - Voice Assistant Integration
 - IoT Device Connectivity
 - Smart Energy Monitoring
 - Mobile Application
 - AI-Based User Behavior Analysis
-- Multi-Language Support
 
+---
+
+## Internship Project
+
+Developed during the Machine Learning Internship at NxtSync Pvt. Ltd.
+
+### Technologies Used
+
+- Python
+- Flask
+- Dialogflow
+- Telegram Bot API
+- Google Cloud Platform
+- NLP
+- REST APIs
+
+### Key Learning Outcomes
+
+- Conversational AI Development
+- Intent Recognition using Dialogflow
+- Telegram Bot Integration
+- Cloud-based Deployment
+- Smart Home Automation
+- API Integration and Testing
+
+---
+
+## Author
+
+### Sagar B V
+
+Master of Computer Applications (MCA)
+
+GitHub: https://github.com/Sagar-bv
 ---
 
 ## 💼 Internship Project
