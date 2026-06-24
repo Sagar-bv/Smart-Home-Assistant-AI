@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.png" alt="Smart Home Assistant Banner" width="100%">
+  <img src="screenshots/banner.png" alt="Smart Home Assistant Banner" width="100%">
 </p>
 
 # 🏠 Smart Home Assistant AI
@@ -156,11 +156,6 @@ Response Sent To User
 
 ---
 
-### 🎛️ Device Control
-
-![Device Control](screenshots/device-control.jpeg)
-
----
 
 ### ☁️ Dialogflow Console
 
