@@ -1,0 +1,255 @@
+/* ==========================
+   GLOBAL
+========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background: #343541;
+    overflow: hidden;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+.sidebar {
+    width: 280px;
+    background: #202123;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.new-chat-btn {
+    background: #444654;
+    border: 1px solid #565869;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+
+.new-chat-btn:hover {
+    background: #565869;
+}
+
+.history-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.history-box {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.history-item {
+    background: #2d2f3a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.5;
+    word-wrap: break-word;
+}
+
+/* ==========================
+   MAIN CHAT AREA
+========================== */
+
+.main-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #343541;
+}
+
+.chat-header {
+    padding: 20px;
+    text-align: center;
+    background: #444654;
+    color: white;
+    border-bottom: 1px solid #565869;
+}
+
+.chat-header h2 {
+    margin-bottom: 5px;
+}
+
+.chat-header p {
+    color: #c5c5d2;
+}
+
+/* ==========================
+   CHAT BOX
+========================== */
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    overflow-y: auto;
+
+    flex: 1;
+}
+
+.user-message,
+.bot-message {
+    max-width: 75%;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.user-message {
+    background: #19c37d;
+    color: white;
+
+    padding: 12px 16px;
+
+    display: inline-block;
+
+    width: fit-content;
+
+    max-width: 70%;
+
+    margin-left: auto;
+    margin-bottom: 12px;
+
+    border-radius: 14px;
+
+    word-wrap: break-word;
+}
+
+.bot-message {
+    background: #444654;
+    color: white;
+
+    padding: 12px 16px;
+
+    display: inline-block;
+
+    width: fit-content;
+
+    max-width: 70%;
+
+    margin-bottom: 12px;
+
+    border-radius: 14px;
+
+    word-wrap: break-word;
+}
+
+/* ==========================
+   INPUT AREA
+========================== */
+
+.input-area {
+    display: flex;
+    padding: 15px;
+    background: #40414f;
+    border-top: 1px solid #565869;
+}
+
+.input-area input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: #2d2f3a;
+    color: white;
+    font-size: 16px;
+}
+
+.input-area input::placeholder {
+    color: #b4b4c7;
+}
+
+.input-area button {
+    margin-left: 10px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 10px;
+    background: #19c37d;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.input-area button:hover {
+    background: #16a46a;
+}
+
+.voice-btn {
+    background: #7c3aed !important;
+}
+
+.voice-btn:hover {
+    background: #6d28d9 !important;
+}
+
+/* ==========================
+   SCROLLBAR
+========================== */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2d2f3a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #565869;
+    border-radius: 10px;
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: 220px;
+    }
+
+    .main-container {
+        flex: 1;
+    }
+
+    .user-message,
+    .bot-message {
+        max-width: 90%;
+    }
+}

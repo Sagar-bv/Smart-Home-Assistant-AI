@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home AI Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+            🏠 Smart Home AI
+        </div>
+
+        <button class="new-chat-btn" onclick="clearChat()">
+            + New Chat
+        </button>
+
+        <div class="history-title">
+            Command History
+        </div>
+
+        <div id="history-box" class="history-box">
+        </div>
+
+    </div>
+
+    <!-- MAIN CHAT -->
+
+    <div class="main-container">
+
+        <div class="chat-header">
+
+            <h2>
+                Smart Home Assistant
+            </h2>
+
+            <p>
+                Control Lights, AC, Fan, Garage and Smart Devices
+            </p>
+
+        </div>
+
+        <div id="chat-box" class="chat-box">
+
+            <div class="bot-message">
+
+                Hello 👋
+
+                I am your Smart Home Assistant.
+
+                How can I help you today?
+
+            </div>
+
+        </div>
+
+        <div class="input-area">
+
+            <input type="text" id="user-input" placeholder="Ask something...">
+
+            <button id="voice-btn" class="voice-btn">
+
+                🎤
+
+            </button>
+
+            <button onclick="sendMessage()">
+
+                Send
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}">
+    </script>
+
+</body>
+
+</html>
